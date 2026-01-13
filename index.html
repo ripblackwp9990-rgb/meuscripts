@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<title>Roblox Scripts Hub</title>
+
+<style>
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #0f0f0f;
+  color: white;
+}
+
+header {
+  background: #111;
+  padding: 20px;
+  text-align: center;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.container {
+  padding: 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.card {
+  background: #1a1a1a;
+  border-radius: 10px;
+  padding: 15px;
+  box-shadow: 0 0 10px rgba(0,255,136,0.2);
+}
+
+.card h2 {
+  margin: 0 0 10px;
+}
+
+.card p {
+  font-size: 14px;
+  color: #ccc;
+}
+
+.card button {
+  margin-top: 10px;
+  width: 100%;
+  padding: 10px;
+  background: #00ff88;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  border-radius: 5px;
+}
+
+.card button:hover {
+  background: #00cc6e;
+}
+
+footer {
+  text-align: center;
+  padding: 15px;
+  background: #111;
+  font-size: 14px;
+  color: #888;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+🔥 Roblox Scripts Hub
+</header>
+
+<div class="container">
+
+  <div class="card">
+    <h2>Infinite Yield</h2>
+    <p>Admin commands completos para qualquer jogo.</p>
+    <button onclick="copyScript(`loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()`)">
+      Copiar Script
+    </button>
+  </div>
+
+  <div class="card">
+    <h2>Aimbot + ESP</h2>
+    <p>ESP, aimbot e hitbox.</p>
+    <button onclick="copyScript(`-- seu script aqui`)">
+      Copiar Script
+    </button>
+  </div>
+
+  <div class="card">
+    <h2>Speed + Fly</h2>
+    <p>Controle de velocidade e voo.</p>
+    <button onclick="copyScript(`-- seu script aqui`)">
+      Copiar Script
+    </button>
+  </div>
+
+</div>
+
+<footer>
+Site criado por Pedro | Roblox Scripts
+</footer>
+
+<script>
+function copyScript(script) {
+  navigator.clipboard.writeText(script)
+  alert("Script copiado!")
+}
+</script>
+
+</body>
+</html>
